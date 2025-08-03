@@ -1,1 +1,1 @@
-# Full-Project-Implementation
+Completed Task 4: Full Project Implementation, where I brought together everything I’ve learned so far by building complete, interactive, and fully responsive web applications using HTML, CSS, and JavaScript.
