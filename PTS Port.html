@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="PTS Style.css">
+</head>
+<body>
+
+  <div class="sidebar">
+    <h2 class="logo">P-T-S</h2>
+    <a href="PTS Main.html">🏠 Home</a>
+    <a href="#about">About Me</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact Me</a>
+  </div>
+
+
+  <div class="content">
+
+    <section id="about" class="box">
+      <h2>About Me</h2>
+      <div id="aboutContent">
+        <p><b>Name:</b> <span id="aboutName"> Saini Siddhardha</span></p>
+        <p><b>Age:</b> <span id="aboutAge"> 21</span></p>
+        <p><b>Gender:</b> <span id="aboutGender"> Male</span></p>
+        <p><b>Degree:</b> <span id="aboutDegree"> BTech CSE CS</span></p>
+      </div>
+      <button onclick="enableEdit('about')">Edit</button>
+      <button onclick="saveAbout()">Save</button>
+    </section>
+
+    <section id="projects" class="box">
+      <h2>Projects</h2>
+      <div id="projectsContent">
+        <p><b>Project 1:</b> <span id="project1">To‑Do List</span></p>
+        <p><b>Project 2:</b> <span id="project2">Shopping Portal</span></p>
+      </div>
+      <button onclick="enableEdit('projects')">Edit</button>
+      <button onclick="saveProjects()">Save</button>
+    </section>
+
+    <section id="contact" class="box">
+      <h2>Contact Me</h2>
+      <div id="contactContent">
+        <p><b>Mobile:</b> <span id="contactMobile">6305580494</span></p>
+        <p><b>Email:</b> <span id="contactEmail">sainisiddhardha@gmail.com</span></p>
+        <p><b>Location:</b> <span id="contactLocation">Visakhapatnam</span></p>
+      </div>
+      <button onclick="enableEdit('contact')">Edit</button>
+      <button onclick="saveContact()">Save</button>
+    </section>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="PTS Scirpt.js"></script>
+</body>
+</html>

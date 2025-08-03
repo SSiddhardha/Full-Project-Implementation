@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping</title>
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="PTS Style.css">
+</head>
+<body id="shop-page">
+  <div class="sidebar">
+    <h2 class="logo">P-T-S</h2>
+    <button onclick="window.location.href='PTS Main.html'">🏠 Home</button>
+    <button onclick="showSearch(this)">🔍 Search</button>
+    <button onclick="filter('books', this)">📚 Books</button>
+    <button onclick="filter('electronics', this)">📱 Electronics</button>
+    <button onclick="filter('clothing', this)">👕 Clothing</button>
+    <button onclick="filter('furniture', this)">🪑 Furniture</button>
+    <button onclick="filter('all', this)">🔄 All Products</button>
+  </div>
+
+  <div class="content">
+    <div id="searchBar" class="box">
+      <h2>Search Products</h2>
+      <input type="text" id="searchInput" placeholder="Search products...">
+      <button onclick="searchProducts()">Search</button>
+      <select id="sortPrice" onchange="sortProducts()">
+        <option value="">Sort By Price</option>
+        <option value="lowHigh">Low → High</option>
+        <option value="highLow">High → Low</option>
+      </select>
+    </div>
+
+    <div id="productsSection" class="box hidden">
+      <h2>Products</h2>
+      <div id="productsGrid" class="products-grid"></div>
+    </div>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="PTS Scirpt.js"></script>
+</body>
+</html>

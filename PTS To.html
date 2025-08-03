@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To‑Do List</title>
+  <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="PTS Style.css">
+</head>
+<body id="todo-page">
+
+  <div class="sidebar">
+    <h2 class="logo">P-T-S</h2>
+    <a href="PTS Main.html">🏠 Home</a>
+    <a href="javascript:void(0)" onclick="showSection('dashboard')">📊 Dashboard</a>
+    <a href="javascript:void(0)" onclick="showSection('addTask')">➕ Add Task</a>
+    <a href="javascript:void(0)" onclick="showSection('activeTasks')">📋 Active Tasks</a>
+    <a href="javascript:void(0)" onclick="showSection('completedTasks')">✅ Completed Tasks</a>
+  </div>
+
+  <div class="content">
+    <section id="dashboard" class="box">
+      <h2>Dashboard</h2>
+      <p>Welcome! Use the sidebar to add and manage your tasks.</p>
+    </section>
+
+    <section id="addTask" class="box hidden">
+      <h2>Add a Task</h2>
+      <input type="text" id="newTask" placeholder="Enter a new task">
+      <button onclick="addTask()">Add Task</button>
+    </section>
+
+    <section id="activeTasks" class="box hidden">
+      <h2>Active Tasks</h2>
+      <ul id="tasksList"></ul>
+    </section>
+
+    <section id="completedTasks" class="box hidden">
+      <h2>Completed Tasks</h2>
+      <ul id="completedList"></ul>
+    </section>
+  </div>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="PTS Scirpt.js"></script>
+</body>
+</html>
